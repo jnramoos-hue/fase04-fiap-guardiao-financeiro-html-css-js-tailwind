@@ -8,220 +8,265 @@
 
     <title>Guardião Financeiro - Nudge Cognitivo</title>
 
+    <!-- Fonte da interface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- CSS gerado pelo Tailwind CLI -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="min-h-screen bg-[#f8f9fa] text-[#333]">
+<body class="min-h-screen bg-[#f7f7f2] font-['Inter',sans-serif] text-[#242429] transition-colors duration-300 dark:bg-[#080808] dark:text-[#f5f5f0]">
 
 <!-- Cabeçalho principal -->
-<header class="border-b border-[#cfd7db] bg-[#dee3e6]">
-    <div class="mx-auto flex w-[95%] max-w-[1040px] flex-col gap-5 px-2 py-6 md:flex-row md:items-center md:justify-between">
+<header class="border-b border-[#dedbd2] bg-[#fbfaf6] transition-colors duration-300 dark:border-[#242429] dark:bg-[#080808]">
+    <div class="mx-auto flex w-[95%] max-w-[1240px] flex-col gap-6 px-2 py-6 xl:flex-row xl:items-center xl:justify-between">
 
         <!-- Nome do projeto -->
-        <div>
-            <h1 class="m-0 text-3xl font-light tracking-[-1px] text-[#315e8a] md:text-4xl">
-                Guardião Financeiro
-            </h1>
+        <div class="shrink-0">
+            <p class="mb-1 text-xs font-semibold uppercase tracking-[0.28em] text-[#9b7b2f] dark:text-[#d6b35a]">Fase 4 • Fintech </p>
 
-            <p class="mt-1 text-sm text-slate-600">
-                Decisões financeiras conscientes no momento certo
-            </p>
+            <h1 class="m-0 text-3xl font-semibold tracking-[-1px] text-[#242429] md:text-4xl dark:text-[#f5f5f0]">Guardião<span class="text-[#9b7b2f] dark:text-[#d6b35a]">Financeiro</span></h1>
+
+            <p class="mt-2 max-w-xl text-sm leading-6 text-[#68686f] dark:text-zinc-400">Decisões financeiras conscientes no momento exato da compra.</p>
         </div>
 
-        <!-- Menu principal -->
-        <nav aria-label="Menu principal">
-            <ul class="flex flex-wrap items-center justify-start gap-4 text-sm font-medium uppercase text-[#1f3c58] md:justify-end md:gap-6">
+        <!-- Área de navegação, tema e usuário -->
+        <div class="flex flex-col gap-4 xl:flex-row xl:items-center xl:gap-6">
 
-                <li>
-                    <a href="#" class="relative py-1 transition duration-300 hover:text-[#315e8a]">
-                        Dashboard
-                    </a>
-                </li>
+            <!-- Menu principal -->
+            <nav class="order-2 xl:order-1" aria-label="Menu principal">
+                <ul class="flex flex-wrap items-center justify-start gap-x-5 gap-y-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-[#68686f] xl:justify-end dark:text-zinc-400">
 
-                <li>
-                    <a href="#" class="relative py-1 transition duration-300 hover:text-[#315e8a]">
-                        Open Finance
-                    </a>
-                </li>
+                    <li>
+                        <a href="#" class="rounded-full bg-[#242429] px-4 py-2 text-white shadow-sm transition duration-300 hover:-translate-y-[1px] hover:bg-[#111113] dark:bg-[#d6b35a] dark:text-black dark:hover:bg-[#ffe45c]">Nudge</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="relative py-1 transition duration-300 hover:text-[#315e8a]">
-                        Transações
-                    </a>
-                </li>
 
-                <li>
-                    <a href="#" class="relative border-b-2 border-[#315e8a] py-1 font-bold text-[#315e8a]">
-                        Nudge
-                    </a>
-                </li>
+                    <li>
+                        <a href="#" class="relative py-2 transition-colors duration-300 hover:text-[#242429] dark:hover:text-[#f5f5f0] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:rounded-full after:bg-[#9b7b2f] after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100 dark:after:bg-[#d6b35a]">Dashboard</a>
+                    </li>
 
-                <li>
-                    <a href="#" class="relative py-1 transition duration-300 hover:text-[#315e8a]">
-                        Balanço
-                    </a>
-                </li>
+                    <li>
+                        <a href="#" class="relative py-2 transition-colors duration-300 hover:text-[#242429] dark:hover:text-[#f5f5f0] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:rounded-full after:bg-[#9b7b2f] after:transition-transform after:duration-300 after:content-['']hover:after:scale-x-100 dark:after:bg-[#d6b35a]">Transações</a>
+                    </li>
 
-            </ul>
-        </nav>
+                    <li>
+                        <a href="#" class="relative py-2 transition-colors duration-300 hover:text-[#242429] dark:hover:text-[#f5f5f0] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:rounded-full after:bg-[#9b7b2f] after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100 dark:after:bg-[#d6b35a]">Balanço</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Tema e usuário -->
+            <div class="order-1 flex items-center justify-end gap-3 xl:order-2">
+
+                <!-- Botão de tema -->
+                <button id="btn-tema" type="button" class="flex h-10 w-10 items-center justify-center rounded-full border border-[#d8d3c5] bg-white text-lg text-[#242429] shadow-sm transition hover:-translate-y-[1px] hover:border-[#9b7b2f] dark:border-[#242429] dark:bg-[#111113] dark:text-[#f5f5f0] dark:hover:border-[#d6b35a]" aria-label="Alternar tema claro e escuro"><span id="icone-tema">🌙</span></button>
+
+                <!-- Usuário logado -->
+                <div class="relative">
+
+                    <button id="btn-usuario" type="button" class="flex items-center gap-3 rounded-full border border-[#d8d3c5] bg-white py-2 pl-2 pr-4 shadow-sm transition hover:-translate-y-[1px] hover:border-[#9b7b2f] dark:border-[#242429] dark:bg-[#111113] dark:hover:border-[#d6b35a]" aria-label="Abrir menu do usuário">
+                        <div class="flex h-9 w-9 items-center justify-center rounded-full bg-[#242429] text-sm font-bold text-white dark:bg-[#d6b35a] dark:text-black"> JR
+                        </div>
+
+                        <div class="hidden text-left sm:block">
+                            <p class="text-sm font-bold text-[#242429] dark:text-[#f5f5f0]">José Ramos</p>
+                            <p class="text-xs text-[#77777d] dark:text-zinc-500">Área do usuário</p>
+                        </div>
+
+                        <span id="seta-usuario" class="text-xs text-[#77777d] transition-transform dark:text-zinc-500">▼</span>
+
+                    </button>
+
+                    <!-- Dropdown do usuário -->
+                    <div id="menu-usuario" class="absolute right-0 top-14 z-50 hidden w-56 overflow-hidden rounded-2xl border border-[#d8d3c5] bg-white shadow-xl shadow-black/10 dark:border-[#242429] dark:bg-[#111113] dark:shadow-black/40">
+                        <div class="border-b border-[#ebe7dc] px-4 py-3 dark:border-[#242429]">
+                            <p class="text-sm font-bold text-[#242429] dark:text-[#f5f5f0]">José Ramos</p>
+                            <p class="text-xs text-[#77777d] dark:text-zinc-500">usuario@email.com</p>
+                        </div>
+
+                        <ul class="py-2 text-sm">
+                            <li>
+                                <a href="#" class="block px-4 py-3 text-[#68686f] transition hover:bg-[#f7f7f2] hover:text-[#242429] dark:text-zinc-400 dark:hover:bg-[#18181b] dark:hover:text-[#f5f5f0]">Profile</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-[#68686f] transition hover:bg-[#f7f7f2] hover:text-[#242429] dark:text-zinc-400 dark:hover:bg-[#18181b] dark:hover:text-[#f5f5f0]">Open Finance</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="block px-4 py-3 text-[#68686f] transition hover:bg-[#f7f7f2] hover:text-[#242429] dark:text-zinc-400 dark:hover:bg-[#18181b] dark:hover:text-[#f5f5f0]">Ajustes</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="block px-4 py-3 text-[#68686f] transition hover:bg-[#f7f7f2] hover:text-[#242429] dark:text-zinc-400 dark:hover:bg-[#18181b] dark:hover:text-[#f5f5f0]">Segurança</a>
+                            </li>
+
+                            <li>
+                                <a href="#"class="block px-4 py-3 text-red-600 transition hover:bg-red-50 dark:text-red-300 dark:hover:bg-red-950/40">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
 <!-- Conteúdo principal -->
-<main class="mx-auto w-[95%] max-w-[1040px] py-8">
+<main class="mx-auto w-[95%] max-w-[1120px] py-8">
 
-    <!-- Layout com sidebar e conteúdo -->
-    <section class="grid grid-cols-1 gap-6 lg:grid-cols-[260px_1fr]">
+    <!-- Layout principal -->
+    <section class="grid grid-cols-1 items-start gap-6 lg:grid-cols-[280px_1fr]">
 
-        <!-- Sidebar de resumo financeiro -->
-        <aside class="rounded-lg border border-[#eee] bg-white p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+        <!-- Sidebar -->
+        <aside class="self-start rounded-3xl border border-[#e5e1d6] bg-white p-6 shadow-xl shadow-black/5 transition-colors duration-300 dark:border-[#242429] dark:bg-[#111113] dark:shadow-black/40">
 
-            <h2 class="mb-5 border-l-[5px] border-[#315e8a] pl-[15px] text-lg font-bold uppercase leading-7 text-[#1f3c58]">
-                Resumo<br>
-                Financeiro
-            </h2>
+            <h2 class="mb-6 border-l-[5px] border-[#9b7b2f] pl-4 text-lg font-bold uppercase leading-7 text-[#242429] dark:border-[#d6b35a] dark:text-[#f5f5f0]">Resumo<br>Financeiro</h2>
 
             <div class="space-y-4">
 
-                <div class="rounded-lg border border-slate-100 bg-slate-50 p-4">
-                    <p class="text-sm text-slate-500">
-                        Saldo Geral
-                    </p>
-
-                    <p class="mt-1 text-2xl font-bold text-[#1f3c58]">
-                        R$ 63.500
-                    </p>
-
-                    <p class="mt-1 text-xs font-medium text-emerald-600">
-                        +12,5% no mês
-                    </p>
+                <div class="rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-4 dark:border-[#242429] dark:bg-[#18181b]">
+                    <p class="text-sm text-[#77777d] dark:text-zinc-500">Saldo Geral</p>
+                    <p class="mt-1 text-2xl font-bold text-[#242429] dark:text-[#f5f5f0]">R$ 63.500</p>
+                    <p class="mt-1 text-xs font-semibold text-[#9b7b2f] dark:text-[#d6b35a]"> +12,5% no mês </p>
                 </div>
 
-                <div class="rounded-lg border border-slate-100 bg-slate-50 p-4">
-                    <p class="text-sm text-slate-500">
-                        Compras Evitadas
-                    </p>
-
-                    <p class="mt-1 text-2xl font-bold text-[#1f3c58]">
-                        R$ 3.400
-                    </p>
-
-                    <p class="mt-1 text-xs text-slate-500">
-                        8 compras interceptadas
-                    </p>
+                <div class="rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-4 dark:border-[#242429] dark:bg-[#18181b]">
+                    <p class="text-sm text-[#77777d] dark:text-zinc-500">Compras Evitadas</p>
+                    <p class="mt-1 text-2xl font-bold text-[#242429] dark:text-[#f5f5f0]">R$ 3.400</p>
+                    <p class="mt-1 text-xs text-[#77777d] dark:text-zinc-500">8 compras interceptadas</p>
                 </div>
 
-                <div class="rounded-lg border border-slate-100 bg-slate-50 p-4">
-                    <p class="text-sm text-slate-500">
-                        Liberdade Financeira
-                    </p>
-
-                    <p class="mt-1 text-2xl font-bold text-[#1f3c58]">
-                        73 meses
-                    </p>
-
-                    <p class="mt-1 text-xs font-medium text-emerald-600">
-                        +5,2 meses se investir
-                    </p>
+                <div class="rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-4 dark:border-[#242429] dark:bg-[#18181b]">
+                    <p class="text-sm text-[#77777d] dark:text-zinc-500">Liberdade Financeira</p>
+                    <p class="mt-1 text-2xl font-bold text-[#242429] dark:text-[#f5f5f0]">73 meses</p>
+                    <p class="mt-1 text-xs font-semibold text-[#9b7b2f] dark:text-[#d6b35a]">+5,2 meses se investir</p>
                 </div>
 
             </div>
 
-            <a
-                    href="#decisao"
-                    class="mt-6 inline-block rounded-full bg-[#315e8a] px-[25px] py-[10px] text-sm font-medium text-white shadow-[0_4px_6px_rgba(49,94,138,0.2)] transition duration-300 hover:-translate-y-[2px] hover:bg-[#1f3c58] hover:shadow-[0_6px_12px_rgba(0,0,0,0.1)]"
-            >
-                Ver decisão &raquo;
-            </a>
+            <a href="#decisao" class="mt-6 inline-block rounded-full bg-[#242429] px-6 py-3 text-sm font-bold text-white shadow-lg shadow-black/10 transition hover:-translate-y-[2px] hover:bg-[#111113] dark:bg-[#d6b35a] dark:text-black dark:hover:bg-[#ffe45c]">Ver decisão &raquo;</a>
+
+            <!-- Score de impulso -->
+            <div class="mt-8 rounded-2xl border border-[#e5e1d6] bg-[#f7f7f2] p-4 dark:border-[#242429] dark:bg-[#18181b]">
+
+                <div class="flex items-center justify-between gap-3">
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#9b7b2f] dark:text-[#d6b35a]">Score de Impulso</p>
+
+                        <h3 class="mt-2 text-3xl font-bold text-[#242429] dark:text-[#f5f5f0]">82<span class="text-base text-[#77777d] dark:text-zinc-500">/100</span>
+                        </h3>
+
+                    </div>
+
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full border border-red-200 bg-red-50 text-xl text-red-600 dark:border-red-500/30 dark:bg-red-950/40 dark:text-red-200">
+                        ⚠
+                    </div>
+                </div>
+
+                <p class="mt-3 text-sm leading-6 text-[#68686f] dark:text-zinc-400">Risco alto de compra emocional detectado nesta transação.</p>
+
+                <div class="mt-4">
+                    <div class="mb-2 flex justify-between text-xs font-medium text-[#77777d] dark:text-zinc-500">
+                        <span>Baixo</span>
+                        <span>Alto</span>
+                    </div>
+
+                    <div class="h-3 overflow-hidden rounded-full bg-[#e5e1d6] dark:bg-[#242429]">
+                        <div class="h-full w-[82%] rounded-full bg-red-500"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checklist -->
+            <div class="mt-5 rounded-2xl border border-[#e5e1d6] bg-[#f7f7f2] p-4 dark:border-[#242429] dark:bg-[#18181b]">
+
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#9b7b2f] dark:text-[#d6b35a]">Checklist do Guardião</p>
+
+                <ul class="mt-4 space-y-3 text-sm text-[#68686f] dark:text-zinc-400">
+
+                    <li class="flex gap-3">
+                        <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#242429] text-[10px] text-white dark:bg-[#d6b35a] dark:text-black">✓</span><span>Compra classificada como não essencial.</span>
+                    </li>
+
+                    <li class="flex gap-3">
+                        <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#242429] text-[10px] text-white dark:bg-[#d6b35a] dark:text-black">✓</span><span>Valor acima do padrão recente de gastos.</span>
+                    </li>
+
+                    <li class="flex gap-3">
+                        <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#242429] text-[10px] text-white dark:bg-[#d6b35a] dark:text-black">✓</span><span>Categoria com histórico de impulsividade.</span>
+                    </li>
+
+                    <li class="flex gap-3">
+                        <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#242429] text-[10px] text-white dark:bg-[#d6b35a] dark:text-black">✓</span><span>Impacto relevante no patrimônio futuro.</span>
+                    </li>
+
+                </ul>
+            </div>
         </aside>
 
-        <!-- Área principal do Nudge Cognitivo -->
+        <!-- Área principal -->
         <section>
 
             <!-- Título da tela -->
             <div class="mb-5">
-                <p class="text-sm font-medium text-slate-500">
-                    Hoje • 27 de Abril, 2026
-                </p>
+                <p class="text-sm font-medium text-[#77777d] dark:text-zinc-500">Hoje • 27 de Abril, 2026</p>
 
-                <h2 class="mt-1 text-2xl font-bold text-[#333] md:text-3xl">
-                    Guardião Financeiro:
-                    <em class="font-light italic">
-                        você tem certeza desta compra?
-                    </em>
-                </h2>
+                <h2 class="mt-1 text-2xl font-bold text-[#242429] md:text-3xl dark:text-[#f5f5f0]">Nudge Cognitivo:<em class="font-light italic text-[#68686f] dark:text-zinc-300">você tem certeza desta compra?</em></h2>
             </div>
 
             <!-- Card de alerta -->
-            <article class="rounded-lg border border-amber-200 bg-white p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+            <article class="rounded-3xl border border-[#d8d3c5] bg-white p-6 shadow-xl shadow-black/5 transition-colors duration-300 dark:border-[#d6b35a]/30 dark:bg-[#111113] dark:shadow-black/40">
 
-                <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-amber-100 px-4 py-2 text-sm font-bold text-amber-800">
+                <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d8d3c5] bg-[#f2ead7] px-4 py-2 text-sm font-bold text-[#7d621f] dark:border-[#d6b35a]/30 dark:bg-[#2a2111] dark:text-[#ffe45c]">
                     <span>⚠</span>
                     <span>Compra impulsiva detectada</span>
                 </div>
 
-                <div class="grid grid-cols-1 gap-6 md:grid-cols-[1fr_240px]">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-[1fr_250px]">
 
                     <!-- Texto do alerta -->
                     <div>
-                        <h3 class="text-2xl font-bold leading-tight text-[#1f3c58]">
-                            Nosso sistema identificou uma possível compra impulsiva.
-                        </h3>
+                        <h3 class="text-2xl font-bold leading-tight text-[#242429] dark:text-[#f5f5f0]">Uma possível compra impulsiva foi identificada.</h3>
 
-                        <p class="mt-3 leading-7 text-[#555]">
-                            Antes de finalizar a compra, veja como esse valor poderia impactar sua liberdade financeira
-                            se fosse investido em vez de gasto no impulso.
-                        </p>
+                        <p class="mt-3 leading-7 text-[#68686f] dark:text-zinc-400">Antes de finalizar a compra, veja como esse valor poderia impactar sua liberdade financeira se fosse investido em vez de gasto no impulso.</p>
 
-                        <div class="mt-6 rounded-lg border border-slate-200 bg-slate-50 p-4">
-                            <p class="text-xs font-bold uppercase tracking-wide text-slate-500">
-                                Produto identificado
-                            </p>
+                        <div class="mt-6 rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-5 dark:border-[#242429] dark:bg-[#18181b]">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#9b7b2f] dark:text-[#d6b35a]">Produto identificado</p>
 
-                            <h4 class="mt-2 text-xl font-bold text-slate-900">
-                                iPhone 15 Pro Max 512GB
-                            </h4>
+                            <h4 class="mt-2 text-xl font-bold text-[#242429] dark:text-[#f5f5f0]">iPhone 15 Pro Max 512GB</h4>
 
-                            <p class="mt-1 text-sm text-slate-600">
-                                Categoria: Tecnologia • Classificação: compra não essencial
-                            </p>
+                            <p class="mt-1 text-sm text-[#68686f] dark:text-zinc-400">Categoria: Tecnologia • Classificação: compra não essencial</p>
                         </div>
                     </div>
 
                     <!-- Valor da compra -->
-                    <div class="rounded-lg bg-[#1f3c58] p-5 text-white">
-                        <p class="text-sm text-slate-200">
-                            Valor da compra
-                        </p>
+                    <div class="rounded-2xl border border-[#d8d3c5] bg-[#f7f7f2] p-5 dark:border-[#242429] dark:bg-[#18181b]">
+                        <p class="text-sm text-[#77777d] dark:text-zinc-500">Valor da compra </p>
 
-                        <p class="mt-2 text-3xl font-bold text-amber-300">
-                            R$ 8.999,00
-                        </p>
+                        <p class="mt-2 text-3xl font-bold text-[#242429] dark:text-[#d6b35a]">R$ 8.999,00</p>
 
-                        <p class="mt-3 rounded-full bg-red-100 px-3 py-2 text-center text-xs font-bold uppercase text-red-700">
-                            Alto impacto
-                        </p>
+                        <p class="mt-4 rounded-full border border-red-300 bg-red-50 px-3 py-2 text-center text-xs font-bold uppercase text-red-700 dark:border-red-500/30 dark:bg-red-950/40 dark:text-red-200">Alto impacto</p>
                     </div>
                 </div>
             </article>
 
             <!-- Projeção financeira -->
-            <article class="mt-6 rounded-lg border border-[#eee] bg-white p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+            <article class="mt-6 rounded-3xl border border-[#e5e1d6] bg-white p-6 shadow-xl shadow-black/5 transition-colors duration-300 dark:border-[#242429] dark:bg-[#111113] dark:shadow-black/40">
 
-                <h3 class="mb-2 text-xl font-bold text-[#1f3c58]">
-                    Projeção de Custo de Oportunidade
-                </h3>
+                <h3 class="mb-2 text-xl font-bold text-[#242429] dark:text-[#f5f5f0]">Projeção de Custo de Oportunidade</h3>
 
-                <p class="mb-6 leading-7 text-[#555]">
-                    O gasto emocional é transformado em dado racional. A comparação abaixo mostra a diferença
-                    entre comprar agora e investir o mesmo valor ao longo do tempo.
-                </p>
+                <p class="mb-6 leading-7 text-[#68686f] dark:text-zinc-400">O gasto emocional é transformado em dado racional. A comparação abaixo mostra a diferença entre comprar agora e investir o mesmo valor ao longo do tempo.</p>
 
                 <!-- Gráfico visual estático -->
-                <div class="rounded-lg border border-slate-200 bg-slate-50 p-5">
+                <div class="rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-5 dark:border-[#242429] dark:bg-[#18181b]">
 
-                    <div class="mb-4 flex justify-between text-xs font-medium text-slate-500">
+                    <div class="mb-4 flex justify-between text-xs font-medium text-[#77777d] dark:text-zinc-500">
                         <span>2026</span>
                         <span>2028</span>
                         <span>2030</span>
@@ -231,23 +276,23 @@
                     <div class="flex h-48 items-end gap-4">
 
                         <div class="flex flex-1 flex-col items-center gap-2">
-                            <div class="h-16 w-full rounded-t-lg bg-red-300"></div>
-                            <span class="text-xs text-slate-500">Compra</span>
+                            <div class="h-16 w-full rounded-t-lg bg-red-400/70"></div>
+                            <span class="text-xs text-[#77777d] dark:text-zinc-500">Compra</span>
                         </div>
 
                         <div class="flex flex-1 flex-col items-center gap-2">
-                            <div class="h-24 w-full rounded-t-lg bg-amber-300"></div>
-                            <span class="text-xs text-slate-500">2028</span>
+                            <div class="h-24 w-full rounded-t-lg bg-[#b6aa8b] dark:bg-[#6f5b24]"></div>
+                            <span class="text-xs text-[#77777d] dark:text-zinc-500">2028</span>
                         </div>
 
                         <div class="flex flex-1 flex-col items-center gap-2">
-                            <div class="h-36 w-full rounded-t-lg bg-emerald-400"></div>
-                            <span class="text-xs text-slate-500">2030</span>
+                            <div class="h-36 w-full rounded-t-lg bg-[#9b7b2f] dark:bg-[#b99a42]"></div>
+                            <span class="text-xs text-[#77777d] dark:text-zinc-500">2030</span>
                         </div>
 
                         <div class="flex flex-1 flex-col items-center gap-2">
-                            <div class="h-44 w-full rounded-t-lg bg-emerald-700"></div>
-                            <span class="text-xs text-slate-500">2035</span>
+                            <div class="h-44 w-full rounded-t-lg bg-[#242429] dark:bg-[#d6b35a]"></div>
+                            <span class="text-xs text-[#77777d] dark:text-zinc-500">2035</span>
                         </div>
 
                     </div>
@@ -256,12 +301,10 @@
                 <!-- Comparação de cenários -->
                 <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
 
-                    <div class="rounded-lg border border-red-200 bg-red-50 p-5">
-                        <h4 class="text-lg font-bold text-red-800">
-                            Se comprar agora
-                        </h4>
+                    <div class="rounded-2xl border border-red-200 bg-red-50 p-5 dark:border-red-500/20 dark:bg-red-950/30">
+                        <h4 class="text-lg font-bold text-red-800 dark:text-red-300">Se comprar agora</h4>
 
-                        <ul class="mt-4 space-y-3 text-sm text-red-900">
+                        <ul class="mt-4 space-y-3 text-sm text-red-900 dark:text-red-100">
                             <li class="flex justify-between gap-4">
                                 <span>Gasto imediato:</span>
                                 <strong>R$ 8.999,00</strong>
@@ -272,19 +315,17 @@
                                 <strong>R$ 27.000,00</strong>
                             </li>
 
-                            <li class="flex justify-between gap-4 border-t border-red-200 pt-3">
+                            <li class="flex justify-between gap-4 border-t border-red-200 pt-3 dark:border-red-500/20">
                                 <span>Impacto total:</span>
                                 <strong>- R$ 35.999,00</strong>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="rounded-lg border border-emerald-200 bg-emerald-50 p-5">
-                        <h4 class="text-lg font-bold text-emerald-800">
-                            Se investir o valor
-                        </h4>
+                    <div class="rounded-2xl border border-[#d8d3c5] bg-[#f2ead7] p-5 dark:border-[#d6b35a]/30 dark:bg-[#2a2111]">
+                        <h4 class="text-lg font-bold text-[#7d621f] dark:text-[#ffe45c]">Se investir o valor</h4>
 
-                        <ul class="mt-4 space-y-3 text-sm text-emerald-900">
+                        <ul class="mt-4 space-y-3 text-sm text-[#3b321f] dark:text-[#f5f5f0]">
                             <li class="flex justify-between gap-4">
                                 <span>Valor investido:</span>
                                 <strong>R$ 8.999,00</strong>
@@ -295,7 +336,7 @@
                                 <strong>R$ 27.000,00</strong>
                             </li>
 
-                            <li class="flex justify-between gap-4 border-t border-emerald-200 pt-3">
+                            <li class="flex justify-between gap-4 border-t border-[#d8d3c5] pt-3 dark:border-[#d6b35a]/30">
                                 <span>Patrimônio futuro:</span>
                                 <strong>+ R$ 35.999,00</strong>
                             </li>
@@ -308,150 +349,175 @@
     </section>
 </main>
 
-<!-- Seção de impacto financeiro -->
-<section class="bg-[#f1f2ea] py-10">
+<!-- Seção de impacto financeiro e calculadora -->
+<section
+        class="border-y border-[#dedbd2] bg-[#fbfaf6] py-10 transition-colors duration-300 dark:border-[#242429] dark:bg-[#111113]">
 
-    <div class="mx-auto grid w-[95%] max-w-[1040px] grid-cols-1 gap-10 lg:grid-cols-[1fr_380px]">
+    <div class="mx-auto grid w-[95%] max-w-[1120px] grid-cols-1 gap-10 lg:grid-cols-[1fr_390px]">
 
         <!-- Explicação do impacto -->
         <article>
-            <h2 class="mb-5 text-2xl font-bold leading-snug text-[#333]">
-                Como uma decisão consciente vira patrimônio
-            </h2>
+            <p class="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#9b7b2f] dark:text-[#d6b35a]">Impacto patrimonial</p>
 
-            <p class="mb-5 leading-7 text-[#555]">
-                O Guardião Financeiro transforma uma escolha do presente em uma projeção de futuro.
-                Ao desistir de uma compra impulsiva, o usuário visualiza o impacto positivo no seu
-                balanço patrimonial preditivo.
-            </p>
+            <h2 class="mb-5 text-2xl font-bold leading-snug text-[#242429] dark:text-[#f5f5f0]">Como uma decisão consciente vira patrimônio</h2>
 
-            <p class="leading-7 text-[#555]">
-                Se o valor desta compra for investido, em 10 anos o usuário poderá ter
-                <strong>R$ 71.998,00 a mais no patrimônio</strong>, o equivalente a
-                <strong>5,2 meses adicionais de liberdade financeira</strong>.
-            </p>
+            <p class="mb-5 leading-7 text-[#68686f] dark:text-zinc-400">O Guardião Financeiro transforma uma escolha do presente em uma projeção de futuro. Ao desistir de uma compra impulsiva, o usuário visualiza o impacto positivo no seu balanço patrimonial preditivo.</p>
+
+            <p class="leading-7 text-[#68686f] dark:text-zinc-400">Se o valor desta compra for investido, em 10 anos o usuário poderá ter<strong class="text-[#9b7b2f] dark:text-[#d6b35a]">R$ 71.998,00 a mais no patrimônio</strong>, o equivalente a<strong class="text-[#9b7b2f] dark:text-[#d6b35a]">5,2 meses adicionais de liberdade financeira</strong>.</p>
+
+            <!-- Alocação sugerida do valor evitado -->
+            <div class="mt-8 rounded-3xl border border-[#e5e1d6] bg-white p-6 shadow-xl shadow-black/5 transition-colors duration-300 dark:border-[#242429] dark:bg-[#18181b] dark:shadow-black/40">
+
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-[#9b7b2f] dark:text-[#d6b35a]">Alocação sugerida</p>
+
+                        <h3 class="mt-2 text-xl font-bold text-[#242429] dark:text-[#f5f5f0]">Para onde esse valor poderia ir ?</h3>
+
+                        <p class="mt-2 text-sm leading-6 text-[#68686f] dark:text-zinc-400">Simulação educacional para transformar a compra evitada em avanço financeiro.</p>
+                    </div>
+
+                    <div class="rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] px-4 py-3 text-right dark:border-[#242429] dark:bg-[#111113]">
+                        <p class="text-xs text-[#77777d] dark:text-zinc-500">Valor analisado</p>
+
+                        <p id="valor-alocado" class="text-lg font-bold text-[#242429] dark:text-[#d6b35a]">R$ 8.999,00</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                    <!-- Reserva e liquidez -->
+                    <div class="rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-4 dark:border-[#242429] dark:bg-[#111113]">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <p class="text-sm font-bold text-[#242429] dark:text-[#f5f5f0]">Reserva e liquidez</p>
+
+                                <p class="mt-1 text-xs leading-5 text-[#68686f] dark:text-zinc-400">Caixa, emergência, CDB liquidez diária ou Tesouro Selic.</p>
+                            </div>
+
+                            <span class="rounded-full bg-[#242429] px-3 py-1 text-xs font-bold text-white dark:bg-[#d6b35a] dark:text-black">35%</span>
+                        </div>
+
+                        <p id="valor-liquidez" class="mt-4 text-lg font-bold text-[#9b7b2f] dark:text-[#d6b35a]">R$ 3.149,65</p>
+                    </div>
+
+                    <!-- Renda fixa -->
+                    <div class="rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-4 dark:border-[#242429] dark:bg-[#111113]">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <p class="text-sm font-bold text-[#242429] dark:text-[#f5f5f0]">Renda fixa</p>
+
+                                <p class="mt-1 text-xs leading-5 text-[#68686f] dark:text-zinc-400">Produtos de menor volatilidade para previsibilidade.</p>
+                            </div>
+
+                            <span class="rounded-full bg-[#242429] px-3 py-1 text-xs font-bold text-white dark:bg-[#d6b35a] dark:text-black">30%</span>
+                        </div>
+
+                        <p id="valor-renda-fixa" class="mt-4 text-lg font-bold text-[#9b7b2f] dark:text-[#d6b35a]">R$ 2.699,70</p>
+                    </div>
+
+                    <!-- Fundos e ativos reais -->
+                    <div class="rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-4 dark:border-[#242429] dark:bg-[#111113]">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <p class="text-sm font-bold text-[#242429] dark:text-[#f5f5f0]">Fundos e ativos reais</p>
+
+                                <p class="mt-1 text-xs leading-5 text-[#68686f] dark:text-zinc-400">Fundos, FIIs ou exposição imobiliária diversificada.</p>
+                            </div>
+
+                            <span class="rounded-full bg-[#242429] px-3 py-1 text-xs font-bold text-white dark:bg-[#d6b35a] dark:text-black">20%</span>
+                        </div>
+
+                        <p id="valor-ativos-reais" class="mt-4 text-lg font-bold text-[#9b7b2f] dark:text-[#d6b35a]">R$ 1.799,80</p>
+                    </div>
+
+                    <!-- Crescimento e proteção -->
+                    <div class="rounded-2xl border border-[#d8d3c5] bg-[#f2ead7] p-4 dark:border-[#d6b35a]/30 dark:bg-[#2a2111]">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <p class="text-sm font-bold text-[#242429] dark:text-[#ffe45c]">Criptoativo e proteção</p>
+                                <p class="mt-1 text-xs leading-5 text-[#68686f] dark:text-zinc-300">Renda variável, exterior, proteção ou parcela especulativa controlada.</p>
+                            </div>
+                            <span class="rounded-full bg-[#9b7b2f] px-3 py-1 text-xs font-bold text-white dark:bg-[#d6b35a] dark:text-black">15%</span>
+                        </div>
+                        <p id="valor-crescimento" class="mt-4 text-lg font-bold text-[#9b7b2f] dark:text-[#ffe45c]"> R$ 1.349,85</p>
+                    </div>
+
+                </div>
+
+                <p class="mt-5 text-xs leading-5 text-[#77777d] dark:text-zinc-500">Simulação educacional. A alocação não representa recomendação individual de investimento.</p>
+            </div>
+
         </article>
 
-        <!-- Alertas recentes -->
-        <aside>
-            <h3 class="mb-5 text-xl font-bold text-[#333]">
-                Alertas recentes
-            </h3>
+        <!-- Calculadora -->
+        <aside class="rounded-3xl border border-[#e5e1d6] bg-white p-6 shadow-xl shadow-black/5 transition-colors duration-300 dark:border-[#242429] dark:bg-[#18181b] dark:shadow-black/40">
 
-            <ul class="space-y-5">
+            <h3 class="text-xl font-bold text-[#242429] dark:text-[#f5f5f0]">Calculadora de juros compostos</h3>
 
-                <li class="grid grid-cols-[52px_1fr] gap-x-4 border-b border-[#e1e1e1] pb-5">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-md bg-amber-100 text-xl text-amber-700">
-                        ⚠
-                    </div>
+            <p class="mt-2 text-sm leading-6 text-[#68686f] dark:text-zinc-400">Simule quanto uma compra evitada pode se transformar no futuro.</p>
 
-                    <div>
-                        <h4 class="mb-1 font-bold leading-tight text-[#1f3c58]">
-                            Compra impulsiva detectada
-                        </h4>
+            <form class="mt-5 space-y-4">
 
-                        <p class="text-sm leading-6 text-[#666]">
-                            Smartphone identificado como gasto de alto impacto.
-                            <a href="#" class="font-bold uppercase text-[#315e8a] hover:underline">
-                                Ver detalhes »
-                            </a>
-                        </p>
-                    </div>
-                </li>
+                <label class="block">
+                    <span class="text-sm font-semibold text-[#68686f] dark:text-zinc-300">
+                        Valor inicial
+                    </span>
+                    <input id="valor-inicial" type="number" value="8999" class="mt-2 w-full rounded-2xl border border-[#d8d3c5] bg-[#f7f7f2] px-4 py-3 text-[#242429] outline-none transition focus:border-[#9b7b2f] dark:border-[#242429] dark:bg-[#111113] dark:text-[#f5f5f0] dark:focus:border-[#d6b35a]">
+                </label>
 
-                <li class="grid grid-cols-[52px_1fr] gap-x-4 border-b border-[#e1e1e1] pb-5">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-md bg-emerald-100 text-xl text-emerald-700">
-                        ✓
-                    </div>
+                <label class="block">
+                    <span class="text-sm font-semibold text-[#68686f] dark:text-zinc-300">Taxa anual estimada (%)</span>
+                    <input id="taxa-anual" type="number" value="12" class="mt-2 w-full rounded-2xl border border-[#d8d3c5] bg-[#f7f7f2] px-4 py-3 text-[#242429] outline-none transition focus:border-[#9b7b2f] dark:border-[#242429] dark:bg-[#111113] dark:text-[#f5f5f0] dark:focus:border-[#d6b35a]">
+                </label>
 
-                    <div>
-                        <h4 class="mb-1 font-bold leading-tight text-[#1f3c58]">
-                            Meta de economia superada
-                        </h4>
+                <label class="block">
+                    <span class="text-sm font-semibold text-[#68686f] dark:text-zinc-300">Tempo em anos</span>
+                    <input id="tempo-anos" type="number" value="10" class="mt-2 w-full rounded-2xl border border-[#d8d3c5] bg-[#f7f7f2] px-4 py-3 text-[#242429] outline-none transition focus:border-[#9b7b2f] dark:border-[#242429] dark:bg-[#111113] dark:text-[#f5f5f0] dark:focus:border-[#d6b35a]">
+                </label>
 
-                        <p class="text-sm leading-6 text-[#666]">
-                            Economia mensal ultrapassou o objetivo planejado.
-                            <a href="#" class="font-bold uppercase text-[#315e8a] hover:underline">
-                                Ver meta »
-                            </a>
-                        </p>
-                    </div>
-                </li>
+                <button id="btn-calcular" type="button" class="w-full rounded-full bg-[#242429] px-6 py-3 text-sm font-bold text-white shadow-lg shadow-black/10 transition hover:-translate-y-[2px] hover:bg-[#111113] dark:bg-[#d6b35a] dark:text-black dark:hover:bg-[#ffe45c]">Calcular projeção
+                </button>
+            </form>
 
-                <li class="grid grid-cols-[52px_1fr] gap-x-4">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-md bg-blue-100 text-xl text-blue-700">
-                        $
-                    </div>
-
-                    <div>
-                        <h4 class="mb-1 font-bold leading-tight text-[#1f3c58]">
-                            Receita recebida
-                        </h4>
-
-                        <p class="text-sm leading-6 text-[#666]">
-                            Salário depositado e saldo geral atualizado.
-                            <a href="#" class="font-bold uppercase text-[#315e8a] hover:underline">
-                                Ver transações »
-                            </a>
-                        </p>
-                    </div>
-                </li>
-
-            </ul>
+            <div id="resultado-juros" class="mt-5 rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-4 text-sm text-[#68686f] dark:border-[#242429] dark:bg-[#111113] dark:text-zinc-400">
+                Resultado da simulação aparecerá aqui.
+            </div>
         </aside>
     </div>
 </section>
 
 <!-- Seção de decisão -->
-<section id="decisao" class="bg-white py-10">
+<section id="decisao" class="bg-[#f7f7f2] py-10 transition-colors duration-300 dark:bg-[#080808]">
 
-    <div class="mx-auto w-[95%] max-w-[1040px] rounded-lg border border-emerald-200 bg-emerald-50 p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+    <div class="mx-auto w-[95%] max-w-[1120px] rounded-3xl border border-[#e5e1d6] bg-white p-6 shadow-xl shadow-black/5 transition-colors duration-300 dark:border-[#242429] dark:bg-[#111113] dark:shadow-black/40">
 
-        <h2 class="text-2xl font-bold text-emerald-900">
-            Decisão consciente
-        </h2>
+        <p class="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#9b7b2f] dark:text-[#d6b35a]">Escolha ativa</p>
 
-        <p class="mt-3 leading-7 text-emerald-800">
-            Escolha uma ação com base no impacto financeiro apresentado. O Guardião Financeiro não bloqueia a compra:
-            o objetivo é apoiar uma decisão consciente.
-        </p>
+        <h2 class="text-2xl font-bold text-[#242429] dark:text-[#f5f5f0]">Decisão consciente</h2>
+
+        <p class="mt-3 leading-7 text-[#68686f] dark:text-zinc-400">Escolha uma ação com base no impacto financeiro apresentado. O Guardião Financeiro não bloqueia a compra: o objetivo é apoiar uma decisão consciente.</p>
 
         <!-- Botões controlados pelo JavaScript -->
         <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
 
-            <button
-                    id="btn-investir"
-                    type="button"
-                    class="rounded-full bg-[#315e8a] px-[25px] py-[12px] text-sm font-medium text-white shadow-[0_4px_6px_rgba(49,94,138,0.2)] transition duration-300 hover:-translate-y-[2px] hover:bg-emerald-700 hover:shadow-[0_6px_12px_rgba(0,0,0,0.1)]"
-            >
+            <button id="btn-investir" type="button" class="rounded-full bg-[#242429] px-6 py-3 text-sm font-bold text-white shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-[2px] hover:bg-[#111113] dark:bg-[#d6b35a] dark:text-black dark:hover:bg-[#ffe45c]">
                 Desistir e Investir este Valor
             </button>
 
-            <button
-                    id="btn-comprar"
-                    type="button"
-                    class="rounded-full bg-slate-900 px-[25px] py-[12px] text-sm font-medium text-white shadow-[0_4px_6px_rgba(0,0,0,0.15)] transition duration-300 hover:-translate-y-[2px] hover:bg-red-700 hover:shadow-[0_6px_12px_rgba(0,0,0,0.1)]"
-            >
+            <button id="btn-comprar" type="button" class="rounded-full border border-[#d8d3c5] bg-white px-6 py-3 text-sm font-bold text-[#242429] shadow-lg shadow-black/5 transition duration-300 hover:-translate-y-[2px] hover:border-red-400 hover:bg-red-50 hover:text-red-700 dark:border-zinc-700 dark:bg-[#18181b] dark:text-[#f5f5f0] dark:shadow-black/30 dark:hover:border-red-400 dark:hover:bg-red-950/40 dark:hover:text-red-200">
                 Aceitar o Risco e Comprar
             </button>
 
         </div>
 
-        <!-- Resultado alterado pelo JavaScript -->
-        <p
-                id="resultado-decisao"
-                class="mt-6 rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-600"
-        >
-            Aguardando uma decisão consciente do usuário.
-        </p>
+        <p id="resultado-decisao" class="mt-6 rounded-2xl border border-[#ebe7dc] bg-[#f7f7f2] p-4 text-sm font-medium text-[#68686f] dark:border-[#242429] dark:bg-[#18181b] dark:text-zinc-400">Aguardando uma decisão consciente do usuário.</p>
     </div>
 </section>
 
 <!-- Rodapé -->
-<footer class="bg-[#1f3c58] py-8 text-center text-sm font-light text-[#ebebeb]">
-    <p>
-        &copy; 2026 - Guardião Financeiro | Projeto FIAP Fase 04
-    </p>
+<footer class="border-t border-[#dedbd2] bg-[#fbfaf6] py-8 text-center text-sm font-light text-[#77777d] transition-colors duration-300 dark:border-[#242429] dark:bg-[#080808] dark:text-zinc-500">
+    <p>&copy; 2026 - Guardião Financeiro | Projeto FIAP Fase 04</p>
 </footer>
 
 <!-- JavaScript da página -->
