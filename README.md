@@ -1,103 +1,202 @@
 # Guardião Financeiro — Nudge Cognitivo | FIAP Fase 04
 
-Tela responsiva desenvolvida para a atividade avaliativa da **Fase 04 da FIAP**, utilizando **HTML, CSS e Tailwind CSS**.
+Tela responsiva desenvolvida para a atividade avaliativa da **Fase 04 da FIAP**, utilizando **HTML5, CSS3, Tailwind CSS e JavaScript**.
 
-O projeto faz parte da proposta **Guardião Financeiro**, uma Fintech acadêmica voltada para educação financeira, prevenção de compras impulsivas e apoio à tomada de decisão consciente.
-
----
-
-## 📌 Sobre o projeto
-
-O **Guardião Financeiro** é uma solução Fintech criada para ajudar pessoas a tomarem decisões financeiras mais conscientes no momento da compra.
-
-A ideia central do projeto é transformar um comportamento impulsivo em uma decisão orientada por dados. Em vez de apenas registrar gastos depois que eles acontecem, o sistema propõe uma intervenção no momento do checkout por meio de um **Nudge Cognitivo**.
-
-Nesta entrega da Fase 04, foi desenvolvida uma tela única baseada no protótipo criado anteriormente no Figma: a tela de **Nudge Cognitivo**, responsável por alertar o usuário sobre uma possível compra impulsiva e apresentar o impacto financeiro futuro dessa decisão.
+O projeto faz parte da proposta **Guardião Financeiro**, uma Fintech acadêmica voltada para educação financeira, prevenção de compras impulsivas e apoio à tomada de decisões financeiras conscientes.
 
 ---
 
-## 🎯 Objetivo da tela
+## Dados acadêmicos
 
-A tela desenvolvida simula o momento em que o sistema identifica uma compra potencialmente impulsiva e apresenta ao usuário:
+- **Aluno:** Jose da Silva Ramos Junior
+- **RM:** 570615
+- **Curso:** Análise e Desenvolvimento de Sistemas (On-line)
+- **Instituição:** FIAP
+- **Fase:** 04
+- **Tema anual:** Fintech
+- **Projeto:** Guardião Financeiro
 
-- o produto identificado;
-- o valor da compra;
-- a classificação da compra como impulsiva;
-- uma projeção de custo de oportunidade;
-- uma comparação entre comprar agora ou investir o valor;
-- o impacto no balanço patrimonial preditivo;
-- duas opções de decisão: desistir da compra ou aceitar o risco.
-
-Essa tela representa o diferencial central do Guardião Financeiro: **interromper o impulso de consumo e transformar a decisão em uma escolha consciente**.
+> Observação: dados sensíveis como CPF, telefone e e-mail pessoal não são utilizados neste README.
 
 ---
 
-## 🧠 Contexto acadêmico
+## Link do repositório
 
-Esta atividade faz parte da **Fase 04 — Front-end, Web, GitHub e Tailwind CSS** do curso de **Análise e Desenvolvimento de Sistemas da FIAP**.
+```text
+https://github.com/jnramoos-hue/fase04-fiap-guardiao-financeiro-html-css-js-tailwind
+```
 
-A proposta da atividade é recriar uma tela do projeto Fintech utilizando:
+---
+
+## Sobre o projeto
+
+O **Guardião Financeiro** é uma proposta de Fintech criada para ajudar usuários a tomarem decisões financeiras mais conscientes no momento da compra.
+
+A ideia central do projeto é transformar uma decisão emocional de consumo em uma escolha orientada por dados. Em vez de apenas registrar gastos depois que eles acontecem, o sistema propõe uma intervenção no momento da decisão por meio de um **Nudge Cognitivo**.
+
+Nesta entrega da Fase 04, foi desenvolvida uma tela única baseada no conceito do projeto: a tela de **Nudge Cognitivo**, responsável por alertar o usuário sobre uma possível compra impulsiva e apresentar o impacto financeiro futuro dessa decisão.
+
+---
+
+## Objetivo da atividade
+
+A atividade avaliativa solicitou a criação de **uma tela relacionada ao projeto Fintech**, utilizando conhecimentos de:
 
 - HTML;
-- CSS separado em arquivo próprio;
+- CSS;
 - Tailwind CSS;
-- responsividade mobile;
-- publicação em repositório público no GitHub.
+- responsividade;
+- organização de arquivos;
+- Git e GitHub.
+
+O projeto também utiliza JavaScript de forma simples para reforçar a interação da interface, sem uso de APIs externas, frameworks JavaScript ou backend.
 
 ---
 
-## 🖥️ Tela desenvolvida
+## Tela desenvolvida
 
-### Tela: Nudge Cognitivo
+### Guardião Financeiro — Nudge Cognitivo
 
-A tela escolhida foi a de **Nudge Cognitivo**, pois ela representa o coração do MVP do Guardião Financeiro.
+A tela simula uma área logada do usuário e representa o momento em que uma possível compra impulsiva é identificada.
 
-No protótipo original, essa tela apresenta uma compra detectada, uma projeção de custo de oportunidade e botões de decisão como:
+A interface apresenta:
 
-- **Desistir e Investir este Valor**;
-- **Aceitar o Risco e Comprar**.
-
-Essa escolha está alinhada com a proposta do produto, que busca interceptar compras impulsivas no momento da decisão e demonstrar o impacto financeiro futuro da escolha.
+- cabeçalho com identidade do Guardião Financeiro;
+- menu principal da aplicação;
+- área do usuário logado com dropdown;
+- botão de alternância entre tema claro e escuro;
+- resumo financeiro lateral;
+- score de impulso;
+- checklist do Guardião;
+- alerta de compra impulsiva;
+- produto identificado;
+- valor da compra;
+- projeção de custo de oportunidade;
+- comparação entre comprar agora e investir;
+- calculadora de juros compostos;
+- alocação compacta do valor evitado;
+- botões de decisão consciente.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Funcionalidades implementadas
+
+### Nudge Cognitivo
+
+A tela exibe um alerta indicando que uma compra pode ser impulsiva. O objetivo é interromper o impulso e incentivar uma decisão mais consciente.
+
+### Score de Impulso
+
+Indicador visual que simula o nível de risco comportamental da compra.
+
+### Checklist do Guardião
+
+Lista os motivos do alerta, como:
+
+- compra classificada como não essencial;
+- valor acima do padrão recente de gastos;
+- categoria com histórico de impulsividade;
+- impacto relevante no patrimônio futuro.
+
+### Calculadora de Juros Compostos
+
+Permite simular quanto uma compra evitada poderia se tornar no futuro, com base em:
+
+- valor inicial;
+- taxa anual estimada;
+- tempo em anos.
+
+### Alocação compacta do valor evitado
+
+A tela sugere, de forma educacional, possíveis destinos para o valor que deixou de ser gasto:
+
+- reserva e liquidez;
+- renda fixa;
+- fundos e ativos reais;
+- crescimento e proteção.
+
+> A alocação apresentada é apenas uma simulação educacional e não representa recomendação individual de investimento.
+
+### Tema claro e escuro
+
+O usuário pode alternar entre tema claro premium e tema escuro por meio de um botão discreto com ícone de lua/sol.
+
+### Menu do usuário
+
+O cabeçalho apresenta uma área de usuário logado com dropdown contendo opções como:
+
+- Profile;
+- Open Finance;
+- Ajustes;
+- Segurança;
+- Sair.
+
+### Decisão consciente
+
+A seção final permite simular a escolha entre:
+
+- desistir da compra e investir o valor;
+- aceitar o risco e comprar.
+
+---
+
+## Tecnologias utilizadas
 
 - **HTML5**
 - **CSS3**
 - **Tailwind CSS**
+- **JavaScript**
 - **Node.js**
 - **npm**
 - **Git**
 - **GitHub**
 - **WebStorm**
 
-> Observação: JavaScript não foi utilizado nesta entrega, pois a atividade não exige comportamento dinâmico. A proposta foi priorizar uma interface estática, responsiva e bem estruturada com HTML, CSS e Tailwind CSS.
+---
+
+## Conceitos de JavaScript aplicados
+
+O JavaScript foi utilizado de forma simples e compatível com o conteúdo da Fase 04, aplicando:
+
+- `querySelector()`;
+- `addEventListener()`;
+- `textContent`;
+- `className`;
+- `Number()`;
+- `Math.pow()`;
+- funções;
+- condicionais `if`;
+- manipulação do DOM;
+- eventos de clique;
+- atualização dinâmica de valores na página.
 
 ---
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
 ```text
-fase04-fiap-guardiao-financeiro-html-css-tailwind/
-├── index.html
-├── css/
-│   └── styles.css
+fase04-fiap-guardiao-financeiro-html-css-js-tailwind/
+├── dist/
+│   ├── index.html
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── script.js
+│
 ├── src/
 │   └── input.css
-├── img/
-│   └── README_IMAGENS.txt
+│
 ├── package.json
 ├── package-lock.json
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## ⚙️ Configuração do Tailwind CSS
+## Configuração do Tailwind CSS
 
-O Tailwind CSS foi configurado utilizando a abordagem **Tailwind CLI**.
+O Tailwind CSS foi configurado com **Tailwind CLI**.
 
 ### Instalação das dependências
 
@@ -107,25 +206,25 @@ npm install tailwindcss @tailwindcss/cli
 
 ### Arquivo de entrada
 
-O arquivo de entrada do Tailwind está localizado em:
-
 ```text
 src/input.css
 ```
 
-Conteúdo do arquivo:
+Conteúdo utilizado:
 
 ```css
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 ```
 
 ### Script de build
 
-No arquivo `package.json`, foi configurado o seguinte script:
+No `package.json`:
 
 ```json
 "scripts": {
-  "build": "npx @tailwindcss/cli -i ./src/input.css -o ./css/styles.css --watch"
+  "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/styles.css --watch"
 }
 ```
 
@@ -135,25 +234,25 @@ No arquivo `package.json`, foi configurado o seguinte script:
 npm run build
 ```
 
-Esse comando gera o arquivo final de CSS em:
+O arquivo final gerado pelo Tailwind fica em:
 
 ```text
-css/styles.css
+dist/css/styles.css
 ```
 
 ---
 
-## 🚀 Como executar o projeto
+## Como executar o projeto
 
-Para visualizar a tela, basta abrir o arquivo:
+Para visualizar a tela, abra o arquivo:
 
 ```text
-index.html
+dist/index.html
 ```
 
-O projeto foi organizado para que o professor consiga abrir a interface diretamente pelo arquivo HTML, sem necessidade de servidor ou configuração extra.
+O projeto foi organizado para abrir diretamente pelo arquivo HTML, sem necessidade de servidor, backend ou APIs externas.
 
-Caso queira recompilar o CSS do Tailwind, execute:
+Caso deseje recompilar o CSS:
 
 ```bash
 npm install
@@ -162,87 +261,73 @@ npm run build
 
 ---
 
-## 📱 Responsividade
+## Responsividade
 
-A interface foi construída com foco em responsividade utilizando classes do Tailwind CSS.
+A interface utiliza classes responsivas do Tailwind CSS para adaptação em diferentes tamanhos de tela.
 
-O layout se adapta para diferentes tamanhos de tela:
+Foram utilizados recursos como:
 
-- em telas maiores, a interface utiliza organização em colunas;
-- em telas menores, os blocos são empilhados para melhorar a leitura;
-- os cards, botões e seções foram estruturados para manter boa usabilidade em dispositivos móveis.
-
----
-
-## 🎨 Identidade visual
-
-A identidade visual do projeto utiliza uma combinação de cores associadas a segurança, tecnologia e finanças:
-
-- tons de azul escuro para confiança e proteção;
-- tons de verde para crescimento financeiro e investimento;
-- tons de amarelo/âmbar para alerta e tomada de decisão;
-- fundo claro para melhor legibilidade.
-
-A proposta visual busca reforçar a ideia de um assistente financeiro confiável, moderno e orientado a decisões conscientes.
+- `grid-cols-1`;
+- `md:grid-cols-2`;
+- `lg:grid-cols-[280px_1fr]`;
+- `xl:flex-row`;
+- `flex-wrap`;
+- espaçamentos e cards adaptáveis.
 
 ---
 
-## 🧩 Relação com o MVP
+## Identidade visual
 
-A tela desenvolvida representa parte do fluxo principal do MVP do Guardião Financeiro:
+A identidade visual utiliza uma paleta premium com:
 
-1. O sistema identifica uma possível compra impulsiva.
-2. O usuário recebe um alerta no momento da decisão.
-3. A interface apresenta o custo de oportunidade da compra.
-4. O usuário escolhe entre desistir e investir ou aceitar o risco da compra.
-5. A decisão pode futuramente alimentar o histórico financeiro e o balanço preditivo.
+- branco e off-white no tema claro;
+- grafite e preto no tema escuro;
+- dourado discreto como cor de destaque;
+- cards arredondados;
+- sombras suaves;
+- tipografia moderna com Inter.
 
-Esse fluxo está relacionado às histórias de usuário do projeto, especialmente:
-
-- **Gatilho e Nudge Cognitivo**;
-- **Custo de Oportunidade**;
-- **Decisão Consciente**;
-- **Balanço Preditivo**.
+O objetivo visual é transmitir segurança, organização e sofisticação, mantendo conexão com o universo de Fintechs e aplicações financeiras.
 
 ---
 
-## ✅ Critérios atendidos da atividade
+## Critérios da atividade atendidos
 
 - [x] Tela relacionada ao projeto Fintech
+- [x] Apenas uma tela principal
 - [x] Uso de HTML
-- [x] Uso de CSS em arquivo separado
+- [x] CSS separado em arquivo próprio
 - [x] Uso de Tailwind CSS
-- [x] Layout responsivo
+- [x] Responsividade para dispositivos móveis
+- [x] JavaScript simples e compatível com a Fase 04
 - [x] Projeto organizado em pastas
-- [x] Arquivo HTML abrindo diretamente no navegador
+- [x] Página abrindo diretamente pelo arquivo HTML
 - [x] Repositório público no GitHub
 - [x] Arquivos necessários incluídos no projeto
+- [x] `node_modules/` ignorado no Git
 
 ---
 
-## 📚 Aprendizados aplicados
+## Observações importantes
 
-Durante o desenvolvimento desta entrega, foram aplicados conceitos de:
-
-- estruturação semântica com HTML;
-- estilização com classes utilitárias do Tailwind CSS;
-- organização de layout com Flexbox e Grid;
-- responsividade mobile-first;
-- separação entre arquivo HTML e arquivo CSS gerado;
-- configuração de ambiente com Node.js e npm;
-- versionamento com Git e GitHub;
-- transformação de um protótipo de Figma em interface web.
+- O projeto não possui integração real com Open Finance.
+- O projeto não possui login funcional real.
+- O projeto não utiliza backend ou banco de dados nesta entrega.
+- A calculadora e a alocação são simulações educacionais.
+- A alocação exibida não representa recomendação individual de investimento.
+- A proposta desta fase é demonstrar uma tela Front-end responsiva utilizando HTML, Tailwind CSS e JavaScript básico.
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **Jose da Silva Ramos Junior**  
-Estudante de Análise e Desenvolvimento de Sistemas — FIAP  
-Projeto acadêmico desenvolvido para a Fase 04, com foco em Front-end, Tailwind CSS e publicação no GitHub.
+RM 570615  
+Análise e Desenvolvimento de Sistemas — FIAP  
+Fase 04 — Front-end, Tailwind CSS, JavaScript e GitHub
 
 ---
 
-## 📌 Observação final
+## Status
 
-Este projeto é uma entrega acadêmica e representa uma etapa da evolução do Guardião Financeiro como proposta de Fintech/Startup. A tela criada nesta fase é estática, mas foi pensada para futuramente evoluir para uma aplicação com integração de dados, banco de dados, backend, inteligência preditiva e recursos de Open Finance.
+Projeto finalizado para entrega acadêmica da Fase 04.
