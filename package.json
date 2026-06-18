@@ -1,0 +1,17 @@
+{
+  "name": "fase04-fiap-guardiao-financeiro-html-css-js-tailwind",
+  "version": "1.0.0",
+  "description": "Tela responsiva desenvolvida para a atividade avaliativa da **Fase 04 da FIAP**, utilizando **HTML, CSS e Tailwind CSS**.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.1",
+    "tailwindcss": "^4.3.1"
+  }
+}

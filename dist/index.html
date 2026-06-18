@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guardião Financeiro - Nudge Cognitivo</title>
+
+    <!-- CSS gerado pelo Tailwind CLI -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="min-h-screen bg-[#f8f9fa] text-[#333]">
+
+<!-- Cabeçalho principal -->
+<header class="border-b border-[#cfd7db] bg-[#dee3e6]">
+    <div class="mx-auto flex w-[95%] max-w-[1040px] flex-col gap-5 px-2 py-6 md:flex-row md:items-center md:justify-between">
+
+        <!-- Nome do projeto -->
+        <div>
+            <h1 class="m-0 text-3xl font-light tracking-[-1px] text-[#315e8a] md:text-4xl">
+                Guardião Financeiro
+            </h1>
+
+            <p class="mt-1 text-sm text-slate-600">
+                Decisões financeiras conscientes no momento certo
+            </p>
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="Menu principal">
+            <ul class="flex flex-wrap items-center justify-start gap-4 text-sm font-medium uppercase text-[#1f3c58] md:justify-end md:gap-6">
+
+                <li>
+                    <a href="#" class="relative py-1 transition duration-300 hover:text-[#315e8a]">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="relative py-1 transition duration-300 hover:text-[#315e8a]">
+                        Open Finance
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="relative py-1 transition duration-300 hover:text-[#315e8a]">
+                        Transações
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="relative border-b-2 border-[#315e8a] py-1 font-bold text-[#315e8a]">
+                        Nudge
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="relative py-1 transition duration-300 hover:text-[#315e8a]">
+                        Balanço
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Conteúdo principal -->
+<main class="mx-auto w-[95%] max-w-[1040px] py-8">
+
+    <!-- Layout com sidebar e conteúdo -->
+    <section class="grid grid-cols-1 gap-6 lg:grid-cols-[260px_1fr]">
+
+        <!-- Sidebar de resumo financeiro -->
+        <aside class="rounded-lg border border-[#eee] bg-white p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+
+            <h2 class="mb-5 border-l-[5px] border-[#315e8a] pl-[15px] text-lg font-bold uppercase leading-7 text-[#1f3c58]">
+                Resumo<br>
+                Financeiro
+            </h2>
+
+            <div class="space-y-4">
+
+                <div class="rounded-lg border border-slate-100 bg-slate-50 p-4">
+                    <p class="text-sm text-slate-500">
+                        Saldo Geral
+                    </p>
+
+                    <p class="mt-1 text-2xl font-bold text-[#1f3c58]">
+                        R$ 63.500
+                    </p>
+
+                    <p class="mt-1 text-xs font-medium text-emerald-600">
+                        +12,5% no mês
+                    </p>
+                </div>
+
+                <div class="rounded-lg border border-slate-100 bg-slate-50 p-4">
+                    <p class="text-sm text-slate-500">
+                        Compras Evitadas
+                    </p>
+
+                    <p class="mt-1 text-2xl font-bold text-[#1f3c58]">
+                        R$ 3.400
+                    </p>
+
+                    <p class="mt-1 text-xs text-slate-500">
+                        8 compras interceptadas
+                    </p>
+                </div>
+
+                <div class="rounded-lg border border-slate-100 bg-slate-50 p-4">
+                    <p class="text-sm text-slate-500">
+                        Liberdade Financeira
+                    </p>
+
+                    <p class="mt-1 text-2xl font-bold text-[#1f3c58]">
+                        73 meses
+                    </p>
+
+                    <p class="mt-1 text-xs font-medium text-emerald-600">
+                        +5,2 meses se investir
+                    </p>
+                </div>
+
+            </div>
+
+            <a
+                    href="#decisao"
+                    class="mt-6 inline-block rounded-full bg-[#315e8a] px-[25px] py-[10px] text-sm font-medium text-white shadow-[0_4px_6px_rgba(49,94,138,0.2)] transition duration-300 hover:-translate-y-[2px] hover:bg-[#1f3c58] hover:shadow-[0_6px_12px_rgba(0,0,0,0.1)]"
+            >
+                Ver decisão &raquo;
+            </a>
+        </aside>
+
+        <!-- Área principal do Nudge Cognitivo -->
+        <section>
+
+            <!-- Título da tela -->
+            <div class="mb-5">
+                <p class="text-sm font-medium text-slate-500">
+                    Hoje • 27 de Abril, 2026
+                </p>
+
+                <h2 class="mt-1 text-2xl font-bold text-[#333] md:text-3xl">
+                    Guardião Financeiro:
+                    <em class="font-light italic">
+                        você tem certeza desta compra?
+                    </em>
+                </h2>
+            </div>
+
+            <!-- Card de alerta -->
+            <article class="rounded-lg border border-amber-200 bg-white p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+
+                <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-amber-100 px-4 py-2 text-sm font-bold text-amber-800">
+                    <span>⚠</span>
+                    <span>Compra impulsiva detectada</span>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-[1fr_240px]">
+
+                    <!-- Texto do alerta -->
+                    <div>
+                        <h3 class="text-2xl font-bold leading-tight text-[#1f3c58]">
+                            Nosso sistema identificou uma possível compra impulsiva.
+                        </h3>
+
+                        <p class="mt-3 leading-7 text-[#555]">
+                            Antes de finalizar a compra, veja como esse valor poderia impactar sua liberdade financeira
+                            se fosse investido em vez de gasto no impulso.
+                        </p>
+
+                        <div class="mt-6 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                            <p class="text-xs font-bold uppercase tracking-wide text-slate-500">
+                                Produto identificado
+                            </p>
+
+                            <h4 class="mt-2 text-xl font-bold text-slate-900">
+                                iPhone 15 Pro Max 512GB
+                            </h4>
+
+                            <p class="mt-1 text-sm text-slate-600">
+                                Categoria: Tecnologia • Classificação: compra não essencial
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Valor da compra -->
+                    <div class="rounded-lg bg-[#1f3c58] p-5 text-white">
+                        <p class="text-sm text-slate-200">
+                            Valor da compra
+                        </p>
+
+                        <p class="mt-2 text-3xl font-bold text-amber-300">
+                            R$ 8.999,00
+                        </p>
+
+                        <p class="mt-3 rounded-full bg-red-100 px-3 py-2 text-center text-xs font-bold uppercase text-red-700">
+                            Alto impacto
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeção financeira -->
+            <article class="mt-6 rounded-lg border border-[#eee] bg-white p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+
+                <h3 class="mb-2 text-xl font-bold text-[#1f3c58]">
+                    Projeção de Custo de Oportunidade
+                </h3>
+
+                <p class="mb-6 leading-7 text-[#555]">
+                    O gasto emocional é transformado em dado racional. A comparação abaixo mostra a diferença
+                    entre comprar agora e investir o mesmo valor ao longo do tempo.
+                </p>
+
+                <!-- Gráfico visual estático -->
+                <div class="rounded-lg border border-slate-200 bg-slate-50 p-5">
+
+                    <div class="mb-4 flex justify-between text-xs font-medium text-slate-500">
+                        <span>2026</span>
+                        <span>2028</span>
+                        <span>2030</span>
+                        <span>2035</span>
+                    </div>
+
+                    <div class="flex h-48 items-end gap-4">
+
+                        <div class="flex flex-1 flex-col items-center gap-2">
+                            <div class="h-16 w-full rounded-t-lg bg-red-300"></div>
+                            <span class="text-xs text-slate-500">Compra</span>
+                        </div>
+
+                        <div class="flex flex-1 flex-col items-center gap-2">
+                            <div class="h-24 w-full rounded-t-lg bg-amber-300"></div>
+                            <span class="text-xs text-slate-500">2028</span>
+                        </div>
+
+                        <div class="flex flex-1 flex-col items-center gap-2">
+                            <div class="h-36 w-full rounded-t-lg bg-emerald-400"></div>
+                            <span class="text-xs text-slate-500">2030</span>
+                        </div>
+
+                        <div class="flex flex-1 flex-col items-center gap-2">
+                            <div class="h-44 w-full rounded-t-lg bg-emerald-700"></div>
+                            <span class="text-xs text-slate-500">2035</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Comparação de cenários -->
+                <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
+
+                    <div class="rounded-lg border border-red-200 bg-red-50 p-5">
+                        <h4 class="text-lg font-bold text-red-800">
+                            Se comprar agora
+                        </h4>
+
+                        <ul class="mt-4 space-y-3 text-sm text-red-900">
+                            <li class="flex justify-between gap-4">
+                                <span>Gasto imediato:</span>
+                                <strong>R$ 8.999,00</strong>
+                            </li>
+
+                            <li class="flex justify-between gap-4">
+                                <span>Custo de oportunidade:</span>
+                                <strong>R$ 27.000,00</strong>
+                            </li>
+
+                            <li class="flex justify-between gap-4 border-t border-red-200 pt-3">
+                                <span>Impacto total:</span>
+                                <strong>- R$ 35.999,00</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="rounded-lg border border-emerald-200 bg-emerald-50 p-5">
+                        <h4 class="text-lg font-bold text-emerald-800">
+                            Se investir o valor
+                        </h4>
+
+                        <ul class="mt-4 space-y-3 text-sm text-emerald-900">
+                            <li class="flex justify-between gap-4">
+                                <span>Valor investido:</span>
+                                <strong>R$ 8.999,00</strong>
+                            </li>
+
+                            <li class="flex justify-between gap-4">
+                                <span>Rendimento estimado:</span>
+                                <strong>R$ 27.000,00</strong>
+                            </li>
+
+                            <li class="flex justify-between gap-4 border-t border-emerald-200 pt-3">
+                                <span>Patrimônio futuro:</span>
+                                <strong>+ R$ 35.999,00</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+    </section>
+</main>
+
+<!-- Seção de impacto financeiro -->
+<section class="bg-[#f1f2ea] py-10">
+
+    <div class="mx-auto grid w-[95%] max-w-[1040px] grid-cols-1 gap-10 lg:grid-cols-[1fr_380px]">
+
+        <!-- Explicação do impacto -->
+        <article>
+            <h2 class="mb-5 text-2xl font-bold leading-snug text-[#333]">
+                Como uma decisão consciente vira patrimônio
+            </h2>
+
+            <p class="mb-5 leading-7 text-[#555]">
+                O Guardião Financeiro transforma uma escolha do presente em uma projeção de futuro.
+                Ao desistir de uma compra impulsiva, o usuário visualiza o impacto positivo no seu
+                balanço patrimonial preditivo.
+            </p>
+
+            <p class="leading-7 text-[#555]">
+                Se o valor desta compra for investido, em 10 anos o usuário poderá ter
+                <strong>R$ 71.998,00 a mais no patrimônio</strong>, o equivalente a
+                <strong>5,2 meses adicionais de liberdade financeira</strong>.
+            </p>
+        </article>
+
+        <!-- Alertas recentes -->
+        <aside>
+            <h3 class="mb-5 text-xl font-bold text-[#333]">
+                Alertas recentes
+            </h3>
+
+            <ul class="space-y-5">
+
+                <li class="grid grid-cols-[52px_1fr] gap-x-4 border-b border-[#e1e1e1] pb-5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-md bg-amber-100 text-xl text-amber-700">
+                        ⚠
+                    </div>
+
+                    <div>
+                        <h4 class="mb-1 font-bold leading-tight text-[#1f3c58]">
+                            Compra impulsiva detectada
+                        </h4>
+
+                        <p class="text-sm leading-6 text-[#666]">
+                            Smartphone identificado como gasto de alto impacto.
+                            <a href="#" class="font-bold uppercase text-[#315e8a] hover:underline">
+                                Ver detalhes »
+                            </a>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="grid grid-cols-[52px_1fr] gap-x-4 border-b border-[#e1e1e1] pb-5">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-md bg-emerald-100 text-xl text-emerald-700">
+                        ✓
+                    </div>
+
+                    <div>
+                        <h4 class="mb-1 font-bold leading-tight text-[#1f3c58]">
+                            Meta de economia superada
+                        </h4>
+
+                        <p class="text-sm leading-6 text-[#666]">
+                            Economia mensal ultrapassou o objetivo planejado.
+                            <a href="#" class="font-bold uppercase text-[#315e8a] hover:underline">
+                                Ver meta »
+                            </a>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="grid grid-cols-[52px_1fr] gap-x-4">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-md bg-blue-100 text-xl text-blue-700">
+                        $
+                    </div>
+
+                    <div>
+                        <h4 class="mb-1 font-bold leading-tight text-[#1f3c58]">
+                            Receita recebida
+                        </h4>
+
+                        <p class="text-sm leading-6 text-[#666]">
+                            Salário depositado e saldo geral atualizado.
+                            <a href="#" class="font-bold uppercase text-[#315e8a] hover:underline">
+                                Ver transações »
+                            </a>
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </aside>
+    </div>
+</section>
+
+<!-- Seção de decisão -->
+<section id="decisao" class="bg-white py-10">
+
+    <div class="mx-auto w-[95%] max-w-[1040px] rounded-lg border border-emerald-200 bg-emerald-50 p-6 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+
+        <h2 class="text-2xl font-bold text-emerald-900">
+            Decisão consciente
+        </h2>
+
+        <p class="mt-3 leading-7 text-emerald-800">
+            Escolha uma ação com base no impacto financeiro apresentado. O Guardião Financeiro não bloqueia a compra:
+            o objetivo é apoiar uma decisão consciente.
+        </p>
+
+        <!-- Botões controlados pelo JavaScript -->
+        <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+
+            <button
+                    id="btn-investir"
+                    type="button"
+                    class="rounded-full bg-[#315e8a] px-[25px] py-[12px] text-sm font-medium text-white shadow-[0_4px_6px_rgba(49,94,138,0.2)] transition duration-300 hover:-translate-y-[2px] hover:bg-emerald-700 hover:shadow-[0_6px_12px_rgba(0,0,0,0.1)]"
+            >
+                Desistir e Investir este Valor
+            </button>
+
+            <button
+                    id="btn-comprar"
+                    type="button"
+                    class="rounded-full bg-slate-900 px-[25px] py-[12px] text-sm font-medium text-white shadow-[0_4px_6px_rgba(0,0,0,0.15)] transition duration-300 hover:-translate-y-[2px] hover:bg-red-700 hover:shadow-[0_6px_12px_rgba(0,0,0,0.1)]"
+            >
+                Aceitar o Risco e Comprar
+            </button>
+
+        </div>
+
+        <!-- Resultado alterado pelo JavaScript -->
+        <p
+                id="resultado-decisao"
+                class="mt-6 rounded-xl border border-slate-200 bg-white p-4 text-sm font-medium text-slate-600"
+        >
+            Aguardando uma decisão consciente do usuário.
+        </p>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-[#1f3c58] py-8 text-center text-sm font-light text-[#ebebeb]">
+    <p>
+        &copy; 2026 - Guardião Financeiro | Projeto FIAP Fase 04
+    </p>
+</footer>
+
+<!-- JavaScript da página -->
+<script src="./js/script.js"></script>
+
+</body>
+</html>
